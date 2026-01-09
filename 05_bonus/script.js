@@ -10,6 +10,7 @@ const name = 'Mario';
 
 // Dichiara la funzione qui.
 
+/*
 function helloHour(hello) {
   if (hour > 17) {
     console.log('Buonasera ' + hello);
@@ -19,6 +20,17 @@ function helloHour(hello) {
     console.log('Buon pomeriggio ' + hello);
   }
 }
+*/
+
+const helloHour = (hello) => {
+  if (hour > 17) {
+    console.log('Buonasera ' + hello);
+  } else if (hour <= 13) {
+    console.log('Buongiorno ' + hello);
+  } else {
+    console.log('Buon pomeriggio ' + hello);
+  }
+};
 
 // Invoca la funzione qui e stampa il risultato in console
 
