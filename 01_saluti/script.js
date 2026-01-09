@@ -11,6 +11,7 @@ function isName(name) {
 // Invoca la funzione qui e stampa il risultato in console
 
 const outputMessage = isName(userName);
-console.log('ciao ' + outputMessage);
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
+
+console.log('ciao ' + outputMessage);
