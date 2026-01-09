@@ -6,19 +6,22 @@ const names = ['Anna', 'Luca', 'Marco', 'Adele', 'Laura', 'Alessandra'];
 
 const acceptedArray = [];
 
+const verifyingArray = verifyWordArray(names);
+
 // Dichiara la funzione qui.
 
 function verifyWordArray(array) {
   for (let i = 0; i < array.length; i++) {
     const arrayLetter = array[i].charAt(0);
+    const arraycomplete = array[i];
 
     if (arrayLetter === 'A') {
-      acceptedArray.push(arrayLetter);
-      console.log(acceptedArray);
+      acceptedArray.push(arraycomplete);
     }
   }
 }
 
+console.log(acceptedArray);
 // Invoca la funzione qui e stampa il risultato in console
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
