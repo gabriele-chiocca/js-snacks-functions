@@ -8,7 +8,7 @@ const acceptedArray = [];
 
 // Dichiara la funzione qui.
 
-function verifyWordArray(array) {
+/*function verifyWordArray(array) {
   for (let i = 0; i < array.length; i++) {
     const arrayLetter = array[i].charAt(0);
     const arraycomplete = array[i];
@@ -18,6 +18,18 @@ function verifyWordArray(array) {
     }
   }
 }
+  */
+
+const verifyWordArray = (array) => {
+  for (let i = 0; i < array.length; i++) {
+    const arrayLetter = array[i].charAt(0);
+    const arraycomplete = array[i];
+
+    if (arrayLetter === 'A') {
+      acceptedArray.push(arraycomplete);
+    }
+  }
+};
 
 // Invoca la funzione qui e stampa il risultato in console
 
