@@ -4,9 +4,13 @@ const userName = 'Mario';
 
 // Dichiara la funzione qui.
 
+/*
 function isName(name) {
   return name;
 }
+*/
+
+const isName = (name) => name;
 
 // Invoca la funzione qui e stampa il risultato in console
 
