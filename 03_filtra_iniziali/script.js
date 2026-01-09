@@ -8,6 +8,17 @@ const acceptedArray = [];
 
 // Dichiara la funzione qui.
 
+function verifyWordArray(array) {
+  for (let i = 0; i < array.length; i++) {
+    const arrayLetter = array[i].charAt(0);
+
+    if (arrayLetter === 'A') {
+      acceptedArray.push(arrayLetter);
+      console.log(acceptedArray);
+    }
+  }
+}
+
 // Invoca la funzione qui e stampa il risultato in console
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
