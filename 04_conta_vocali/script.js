@@ -5,7 +5,7 @@ const word = 'javascript';
 
 // Dichiara la funzione qui.
 
-function verifyVocals(string) {
+/*function verifyVocals(string) {
   let countVoc = 0;
   for (let i = 0; i < string.length; i++) {
     const checkVocals = string[i];
@@ -16,7 +16,20 @@ function verifyVocals(string) {
     }
   }
   console.log(`${countVoc} (${insertVocals.join()})`);
-}
+} */
+
+const verifyVocals = (string) => {
+  let countVoc = 0;
+  for (let i = 0; i < string.length; i++) {
+    const checkVocals = string[i];
+
+    if (vocali.includes(checkVocals)) {
+      countVoc++;
+      insertVocals.push(checkVocals);
+    }
+  }
+  console.log(`${countVoc} (${insertVocals.join()})`);
+};
 
 // Invoca la funzione qui e stampa il risultato in console
 
