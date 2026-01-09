@@ -6,8 +6,6 @@ const names = ['Anna', 'Luca', 'Marco', 'Adele', 'Laura', 'Alessandra'];
 
 const acceptedArray = [];
 
-const verifyingArray = verifyWordArray(names);
-
 // Dichiara la funzione qui.
 
 function verifyWordArray(array) {
@@ -21,7 +19,10 @@ function verifyWordArray(array) {
   }
 }
 
-console.log(acceptedArray);
 // Invoca la funzione qui e stampa il risultato in console
 
+const verifyingArray = verifyWordArray(names);
+
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
+
+console.log(acceptedArray);
