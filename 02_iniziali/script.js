@@ -4,22 +4,25 @@ parola dell'array fornito */
 
 const names = ['Anna', 'Luca', 'Marco', 'Adele', 'Giovanni', 'Alessandra'];
 
-const newArrayInitialNames = [];
-
 // Dichiara la funzione qui.
 
-/* function initialWord(listName) {
+function initialWord(listName) {
+  const newArrayInitialNames = [];
   for (let i = 0; i < listName.length; i++) {
     newArrayInitialNames.push(listName[i].charAt(0));
   }
+  return newArrayInitialNames;
 }
-*/
 
-const initialWord = (listName) => {
+/*const initialWord = (listName) => {
+  const newArrayInitialNames = [];
+
   for (let i = 0; i < listName.length; i++) {
     newArrayInitialNames.push(listName[i].charAt(0));
   }
-};
+
+  return newArrayInitialNames;
+};*/
 
 // Invoca la funzione qui e stampa il risultato in console
 
@@ -27,4 +30,4 @@ const verifyNames = initialWord(names);
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
 
-console.log(newArrayInitialNames);
+console.log(verifyNames);

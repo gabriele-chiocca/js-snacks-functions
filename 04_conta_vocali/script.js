@@ -28,7 +28,9 @@ const verifyVocals = (string) => {
       insertVocals.push(checkVocals);
     }
   }
-  console.log(`${countVoc} (${insertVocals.join()})`);
+
+  // console.log(`${countVoc} (${insertVocals.join()})`);
+  return `${countVoc} (${insertVocals.join()})`;
 };
 
 // Invoca la funzione qui e stampa il risultato in console
@@ -37,6 +39,6 @@ const vocali = ['a', 'e', 'i', 'o', 'u'];
 
 const insertVocals = [];
 
-verifyVocals(word);
+console.log(verifyVocals(word));
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
