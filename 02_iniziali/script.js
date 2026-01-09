@@ -8,11 +8,18 @@ const newArrayInitialNames = [];
 
 // Dichiara la funzione qui.
 
-function initialWord(listName) {
+/* function initialWord(listName) {
   for (let i = 0; i < listName.length; i++) {
     newArrayInitialNames.push(listName[i].charAt(0));
   }
 }
+*/
+
+const initialWord = (listName) => {
+  for (let i = 0; i < listName.length; i++) {
+    newArrayInitialNames.push(listName[i].charAt(0));
+  }
+};
 
 // Invoca la funzione qui e stampa il risultato in console
 
